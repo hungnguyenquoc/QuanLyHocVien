@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace QuanLyHocVien.Web.Controllers
 {
-    public class aController : Controller
+    public class UserController : Controller
     {
-        // GET: a
+        // GET: User
         public ActionResult Index()
         {
             return View();
