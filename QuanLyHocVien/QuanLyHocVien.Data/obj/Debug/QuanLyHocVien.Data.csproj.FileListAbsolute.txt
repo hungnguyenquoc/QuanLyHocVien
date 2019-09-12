@@ -1,0 +1,14 @@
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\QuanLyHocVien.Data.dll.config
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\QuanLyHocVien.Data.dll
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\QuanLyHocVien.Data.pdb
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\EntityFramework.dll
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\QuanLyHocVien.Common.dll
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\QuanLyHocVien.Common.pdb
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\EntityFramework.xml
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\obj\Debug\QuanLyHocVien.Data.csprojAssemblyReference.cache
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\obj\Debug\QuanLyHocVien.Data.csproj.CoreCompileInputs.cache
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\obj\Debug\QuanLyHocVien.Data.csproj.CopyComplete
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\obj\Debug\QuanLyHocVien.Data.dll
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\obj\Debug\QuanLyHocVien.Data.pdb

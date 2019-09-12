@@ -31,7 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,6 +49,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuanLyHocVien.Common\QuanLyHocVien.Common.csproj">
+      <Project>{444dc55d-f552-4fbe-b0c1-21b8214282e8}</Project>
+      <Name>QuanLyHocVien.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuanLyHocVien.Data\QuanLyHocVien.Data.csproj">
+      <Project>{e0197839-4338-437c-aa7f-0196a09212cf}</Project>
+      <Name>QuanLyHocVien.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuanLyHocVien.Model\QuanLyHocVien.Model.csproj">
+      <Project>{16495751-1543-4120-959d-5e1b85f2a7be}</Project>
+      <Name>QuanLyHocVien.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
