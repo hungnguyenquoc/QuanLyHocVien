@@ -12,3 +12,6 @@ F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLy
 F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\obj\Debug\QuanLyHocVien.Data.csproj.CopyComplete
 F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\obj\Debug\QuanLyHocVien.Data.dll
 F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\obj\Debug\QuanLyHocVien.Data.pdb
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\QuanLyHocVien.Model.dll
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\QuanLyHocVien.Model.pdb
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\QuanLyHocVien.Model.dll.config

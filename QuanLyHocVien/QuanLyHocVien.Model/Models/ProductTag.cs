@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace QuanLyHocVien.Model.Models
 {
     [Table("ProductTags")]
-    class ProductTag
+    public class ProductTag
     {
         [Key]
         public int Cou_ID { get; set; }

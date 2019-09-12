@@ -48,7 +48,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\DbFactory.cs" />
+    <Compile Include="Infrastructure\IDbFactory.cs" />
+    <Compile Include="Infrastructure\IRepository.cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\RepositoryBase.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyHocVienDbContext.cs" />
+    <Compile Include="Repositories\CourseCategoryRepository.cs" />
+    <Compile Include="Repositories\CourseRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -59,6 +69,11 @@
       <Project>{444dc55d-f552-4fbe-b0c1-21b8214282e8}</Project>
       <Name>QuanLyHocVien.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\QuanLyHocVien.Model\QuanLyHocVien.Model.csproj">
+      <Project>{16495751-1543-4120-959d-5e1b85f2a7be}</Project>
+      <Name>QuanLyHocVien.Model</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
