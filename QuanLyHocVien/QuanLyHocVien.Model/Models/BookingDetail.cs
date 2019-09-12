@@ -11,10 +11,10 @@ namespace QuanLyHocVien.Model.Models
     [Table("BookingDetails")]
     public class BookingDetail
     {
-        [Key]
+        [Key ,Column(Order = 0)]
         public int Book_ID { get; set; }
 
-        [Key]
+        [Key, Column(Order = 1)]
         public int Cou_ID { get; set; }
 
         public int Quantity { get; set; }

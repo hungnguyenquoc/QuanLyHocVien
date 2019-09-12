@@ -31,7 +31,8 @@ namespace QuanLyHocVien.Model.Models
         [MaxLength(256)]
         public string Cou_Image { get; set; }
 
-        public XElement Cou_MoreImages { get; set; }
+        [Column(TypeName ="xml")]
+        public string Cou_MoreImages { get; set; }
 
         public decimal Cou_Price { get; set; }
 
@@ -50,6 +51,7 @@ namespace QuanLyHocVien.Model.Models
         [ForeignKey("Re_ID")]
         public virtual OpenRegister OpenRegister { get; set; }
 
+        public virtual IEnumerable<BookingDetail> BookingDetails { get; set; }
 
     }
 }

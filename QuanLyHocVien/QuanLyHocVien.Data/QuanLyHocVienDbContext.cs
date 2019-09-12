@@ -10,7 +10,7 @@ namespace QuanLyHocVien.Data
 {
     public class QuanLyHocVienDbContext : DbContext
     {
-        public QuanLyHocVienDbContext(): base("DB_QuanLyHocVien")
+        public QuanLyHocVienDbContext(): base("AcademyConnection")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }
