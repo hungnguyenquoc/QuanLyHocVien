@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyHocVien.Data.Repositories
 {
-    public interface ICourseCategoryRepository
+    public interface ICourseCategoryRepository: IRepository<CourseCategory>
     {
         IEnumerable<CourseCategory> GetByAlias(string alias);
     }
