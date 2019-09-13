@@ -115,6 +115,7 @@
     <Compile Include="Models\BookingDetail.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\CourseCategory.cs" />
+    <Compile Include="Models\Error.cs" />
     <Compile Include="Models\OpenRegister.cs" />
     <Compile Include="Models\ProductTag.cs" />
     <Compile Include="Models\Tag.cs" />

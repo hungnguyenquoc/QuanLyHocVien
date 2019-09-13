@@ -20,6 +20,8 @@ namespace QuanLyHocVien.Service
         IEnumerable<CourseCategory> GetAll();
 
         IEnumerable<CourseCategory> GetByID(int id);
+
+        void Save();
     }
     public class CourseCategoryService : ICourseCategoryService
     {
@@ -49,6 +51,11 @@ namespace QuanLyHocVien.Service
         public CourseCategory GetByID(int id)
         {
             return _courseCategoryRepository.GetSingleById(id);
+        }
+
+        public void Save()
+        {
+            _unitOfWork.Commit();
         }
 
         public void Update(CourseCategory courseCategory)

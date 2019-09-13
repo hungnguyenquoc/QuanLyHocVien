@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="CourseService.cs" />
     <Compile Include="CourseCategoryService.cs" />
+    <Compile Include="ErrorService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

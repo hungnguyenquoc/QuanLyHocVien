@@ -22,7 +22,7 @@ namespace QuanLyHocVien.Data
         public DbSet<OpenRegister> OpenRegisters { get; set; }
         public DbSet<ProductTag> ProductTags { get; set; }
         public DbSet<Tag> Tags { get; set; }
-
+        public DbSet<Error> Errors { get; set; }
         protected override void OnModelCreating(DbModelBuilder builder)
         {
             base.OnModelCreating(builder);

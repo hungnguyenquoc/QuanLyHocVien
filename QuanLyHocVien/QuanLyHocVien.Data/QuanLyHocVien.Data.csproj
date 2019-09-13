@@ -59,11 +59,16 @@
     <Compile Include="Migrations\201909120417278_InitialDB.Designer.cs">
       <DependentUpon>201909120417278_InitialDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909130403164_AddErrorsTable.cs" />
+    <Compile Include="Migrations\201909130403164_AddErrorsTable.Designer.cs">
+      <DependentUpon>201909130403164_AddErrorsTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuanLyHocVienDbContext.cs" />
     <Compile Include="Repositories\CourseCategoryRepository.cs" />
     <Compile Include="Repositories\CourseRepository.cs" />
+    <Compile Include="Repositories\ErrorRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -82,6 +87,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201909120417278_InitialDB.resx">
       <DependentUpon>201909120417278_InitialDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909130403164_AddErrorsTable.resx">
+      <DependentUpon>201909130403164_AddErrorsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
