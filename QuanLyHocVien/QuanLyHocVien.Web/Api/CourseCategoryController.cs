@@ -11,6 +11,7 @@ using System.Web.Mvc;
 
 namespace QuanLyHocVien.Web.Api
 {
+    [RoutePrefix("api/postcategory")]
     public class CourseCategoryController : ApiControllerBase
     {
         ICourseCategoryService _courseCategoryService;
