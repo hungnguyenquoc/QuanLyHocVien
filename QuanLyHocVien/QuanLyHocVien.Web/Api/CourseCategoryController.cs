@@ -1,6 +1,8 @@
-﻿using QuanLyHocVien.Model.Models;
+﻿using AutoMapper;
+using QuanLyHocVien.Model.Models;
 using QuanLyHocVien.Service;
 using QuanLyHocVien.Web.Infrastructure.Core;
+using QuanLyHocVien.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,21 +26,37 @@ namespace QuanLyHocVien.Web.Api
         {
             return CreateHttpResponse(request, () =>
             {
-                HttpResponseMessage response = null;
-                if (ModelState.IsValid)
-                {
-                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
-                }
-                else
-                {
-                    var listCategory = _courseCategoryService.GetAll();
+                var listCategory = _courseCategoryService.GetAll();
 
-                    response = request.CreateResponse(HttpStatusCode.OK, listCategory);
+                //var listPostCategoryVm = Mapper.Map<List<CourseCategoryViewModel>>(listCategory).ToList();
 
-                }
+                HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, listCategory);
+
                 return response;
             });
         }
+        //public  HttpResponseMessage Get(HttpRequestMessage request)
+        //{
+        //    return CreateHttpResponse(request, () =>
+        //    {
+        //        HttpResponseMessage response = null;
+        //        if (ModelState.IsValid)
+        //        {
+        //            request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+        //        }
+        //        else
+        //        {
+        //            var listCategory = _courseCategoryService.GetAll();
+        //            CourseCategoryViewModel courseCategoryViewModel = new CourseCategoryViewModel();
+        //            //var listCourseCategoryVM = Mapper.Map<List<CourseCategoryViewModel>>(listCategory);
+        //            //var listCourseCategoryVM = Mapper.Map<List<CourseCategoryViewModel>>(listCategory);
+
+        //            response = request.CreateResponse(HttpStatusCode.OK, listCourseCategoryVM);
+
+        //        }
+        //        return response;
+        //    });
+        //}
 
         public HttpResponseMessage Post(HttpRequestMessage request, CourseCategory courseCategory)
         {

@@ -113,3 +113,5 @@ F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLy
 F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Web\obj\Debug\QuanLyHocVien.Web.pdb
 F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
 F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Web\bin\AutoMapper.dll
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Web\bin\AutoMapper.xml

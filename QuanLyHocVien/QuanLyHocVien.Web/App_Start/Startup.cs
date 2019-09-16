@@ -12,6 +12,7 @@ using QuanLyHocVien.Data;
 using QuanLyHocVien.Data.Infrastructure;
 using QuanLyHocVien.Data.Repositories;
 using QuanLyHocVien.Service;
+using QuanLyHocVien.Web.Mappings;
 
 [assembly: OwinStartup(typeof(QuanLyHocVien.Web.App_Start.Startup))]
 
@@ -23,6 +24,9 @@ namespace QuanLyHocVien.Web.App_Start
         {
             // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=316888
             ConfigAutofac(app);
+            AutoMapperConfiguration.Configure();
+
+
         }
         private void ConfigAutofac(IAppBuilder app)
         {
