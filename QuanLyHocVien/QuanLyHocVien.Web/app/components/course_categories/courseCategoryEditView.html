@@ -1,0 +1,29 @@
+﻿<nav aria-label="breadcrumb" style="font-size:20px; ">
+    <button class="btn btn-success" ui-sref="course_categories">Cập nhật danh mục {{ courseCategory.Cate_Name }}</button>
+</nav>
+<form class="form-horizontal" novalidate name="frmUpdateCourseCategory" role="form" ng-submit="UpdateCourseCategory()">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Ten danh muc</label>
+        <input type="text" class="form-control" name="Cate_Name" ng-model="courseCategory.Cate_Name" placeholder="Tên danh mục">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Tieu de SEO</label>
+        <input type="text" class="form-control" name="Cate_Alias" ng-model="courseCategory.Cate_Alias" id="exampleInputPassword1" placeholder="">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Mô tả ngắn</label>
+        <input type="text" class="form-control" name="Cate_Description" ng-model="courseCategory.Cate_Description" id="exampleInputPassword1" placeholder="">
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="Status" ng-model="courseCategory.Status" ng-checked="courseCategory.Status"> Kích hoạt
+                </label>
+            </div>
+        </div>
+    </div>
+    <input type="checkbox" name="name" value="" />
+    <button class="btn btn-default" ui-sref="course_categories">Cancel</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

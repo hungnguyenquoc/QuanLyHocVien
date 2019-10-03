@@ -54,8 +54,8 @@
     <Reference Include="Autofac.Integration.WebApi, Version=4.3.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
       <HintPath>..\packages\Autofac.WebApi2.4.3.1\lib\net45\Autofac.Integration.WebApi.dll</HintPath>
     </Reference>
-    <Reference Include="AutoMapper, Version=5.2.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
-      <HintPath>..\packages\AutoMapper.5.2.0\lib\net45\AutoMapper.dll</HintPath>
+    <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -157,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\CourseCategoryController.cs" />
+    <Compile Include="Api\CourseController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -168,6 +169,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\Core\ApiControllerBase.cs" />
+    <Compile Include="Infrastructure\Core\PaginationSet.cs" />
     <Compile Include="Infrastructure\Extensions\EntityExtensions.cs" />
     <Compile Include="Mappings\AutoMapperConfiguration.cs" />
     <Compile Include="Models\BookingCourseViewModel.cs" />
@@ -179,6 +181,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\components\course_categories\courseCategories.module.js" />
+    <Content Include="app\components\course_categories\courseCategoryAddController.js" />
+    <Content Include="app\components\course_categories\courseCategoryAddView.html" />
+    <Content Include="app\components\course_categories\courseCategoryEditController.js" />
+    <Content Include="app\components\course_categories\courseCategoryEditView.html" />
+    <Content Include="app\components\course_categories\courseCategoryListController.js" />
+    <Content Include="app\components\course_categories\courseCategoryListView.html" />
     <Content Include="app\components\courses\courseAddController.js" />
     <Content Include="app\components\courses\courseAddView.html" />
     <Content Include="app\components\courses\courseEditController.js" />
@@ -188,7 +197,13 @@
     <Content Include="app\components\courses\courses.module.js" />
     <Content Include="app\components\home\homeController.js" />
     <Content Include="app\components\home\homeView.html" />
+    <Content Include="app\shared\directive\pagerDirective.html" />
+    <Content Include="app\shared\directive\pagerDirective.js" />
+    <Content Include="app\shared\fillter\statusFillter.js" />
     <Content Include="app\shared\modules\academy.common.js" />
+    <Content Include="app\shared\services\apiService.js" />
+    <Content Include="app\shared\services\commonService.js" />
+    <Content Include="app\shared\services\notificationService.js" />
     <Content Include="Assets\Admin\fonts\font-awesome\css\font-awesome.css" />
     <Content Include="Assets\Admin\fonts\font-awesome\css\font-awesome.min.css" />
     <Content Include="Assets\Admin\fonts\font-awesome\fonts\fontawesome-webfont.svg" />
@@ -1575,12 +1590,9 @@
     <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\components\course-categories\" />
     <Folder Include="app\components\users\" />
-    <Folder Include="app\shared\directive\" />
     <Folder Include="app\shared\footer\" />
     <Folder Include="app\shared\navigation\" />
-    <Folder Include="app\shared\services\" />
     <Folder Include="App_Data\" />
     <Folder Include="Assets\Client\" />
     <Folder Include="Scripts\plugins\" />

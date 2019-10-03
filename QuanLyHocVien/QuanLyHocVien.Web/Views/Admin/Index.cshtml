@@ -8,11 +8,16 @@
     <meta name="author" content="">
 
     <title>3D Chart - SpaceX Template</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 
     <link href="~/Assets/Admin/styles/style.min.css" rel="stylesheet" />
     <link href="~/Assets/Admin/fonts/themify-icons/themify-icons.css" rel="stylesheet" />
     <link href="~/Assets/Admin/plugin/mCustomScrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
     <link href="~/Assets/Admin/plugin/waves/waves.min.css" rel="stylesheet" />
+    <!-- library sweet-alert -->
+    <link rel='stylesheet' href='https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css'>
+    <!-- library toastr-->
+    <link rel="stylesheet" href="~/node_modules/toastr/build/toastr.css">
 
 
 </head>
@@ -43,7 +48,7 @@
                         <a class="waves-effect" ui-sref="courses_edit"><i class="menu-icon ti-calendar"></i><span>Sua khoa học</span></a>
                     </li>
                     <li>
-                        <a class="waves-effect" href="widgets.html"><i class="menu-icon ti-layers-alt"></i><span>Quản lý học viên</span><span class="notice notice-yellow">6</span></a>
+                        <a class="waves-effect" ui-sref="course_categories"><i class="menu-icon ti-layers-alt"></i><span>Danh mục khóa học</span><span class="notice notice-yellow">6</span></a>
                     </li>
                 </ul>
                 <!-- /.menu js__accordion -->
@@ -88,7 +93,7 @@
         <div class="main-content">
             <div class="row small-spacing">
                 <div ui-view></div>
-                
+
             </div>
             <!-- /.row .small-spacing -->
         </div>
@@ -110,16 +115,40 @@
 
     <script src="~/app/shared/modules/academy.common.js"></script>
 
+    <!-- Fillter-->
+    <script src="~/app/shared/fillter/statusFillter.js"></script>
+    <!-- Page Directive-->
+    <script src="~/app/shared/directive/pagerDirective.js"></script>
+
+    <!-- file script for module-->
     <script src="~/app/components/courses/courses.module.js"></script>
+    <script src="~/app/components/course_categories/courseCategories.module.js"></script>
+
+    <!-- file script for main js-->
     <script src="~/app/app.js"></script>
 
+    <!-- file script for service-->
+    <script src="~/app/shared/services/apiService.js"></script>
+    <script src="~/app/shared/services/notificationService.js"></script>
+    <!-- library toastr-->
+    <script src="~/node_modules/toastr/toastr.js"></script>
+
+
+    <!-- library sweet alert-->
+    <script src='https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.min.js'></script>
+
+    <script src="~/app/shared/services/commonService.js"></script>
+
+    <!-- file script for controller-->
     <script src="~/app/components/courses/courseAddController.js"></script>
-
     <script src="~/app/components/courses/courseEditController.js"></script>
-
     <script src="~/app/components/courses/courseListController.js"></script>
-    <script src="~/app/components/home/homeController.js"></script>
 
+    <script src="~/app/components/course_categories/courseCategoryListController.js"></script>
+    <script src="~/app/components/course_categories/courseCategoryAddController.js"></script>
+    <script src="~/app/components/course_categories/courseCategoryEditController.js"></script>
+
+    <script src="~/app/components/home/homeController.js"></script>
 
 
 

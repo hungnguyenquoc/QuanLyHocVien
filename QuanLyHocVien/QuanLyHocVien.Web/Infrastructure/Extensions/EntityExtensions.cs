@@ -11,6 +11,7 @@ namespace QuanLyHocVien.Web.Infrastructure.Extensions
     {
         public static void UpdateCourseCategory(this CourseCategory courseCategory, CourseCategoryViewModel courseCategoryViewModel)
         {
+            
             courseCategory.Cate_Alias = courseCategoryViewModel.Cate_Alias;
             courseCategory.Cate_Description = courseCategoryViewModel.Cate_Description;
             courseCategory.Cate_ID = courseCategoryViewModel.Cate_ID;

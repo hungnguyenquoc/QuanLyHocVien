@@ -10,13 +10,19 @@ namespace QuanLyHocVien.Web.Mappings
 {
     public class AutoMapperConfiguration
     {
-        public static void Configure() =>
+        public static void Configure()
+        {
+            Mapper.CreateMap<Course, CourseViewModel>();
+            Mapper.CreateMap<CourseCategory, CourseCategoryViewModel>();
+        
+        
+        }
             //CreateMap<Course, CourseViewModel>()
-            
-            Mapper.Initialize(cfg =>
-            {
-                cfg.CreateMap<Course, CourseViewModel>();
-                cfg.CreateMap<CourseCategory, CourseCategoryViewModel>();
-            });//var config = new MapperConfiguration(cfg => {//cfg.CreateMap<Course, CourseViewModel>();//    cfg.CreateMap<CourseCategory, CourseCategoryViewModel>();//});//IMapper mapper = config.CreateMapper();//var course = new Course();//var dest = mapper.Map<Course, CourseViewModel>(course);////var courseCategory = new CourseCategory();//var dest = mapper.Map<CourseCategory, CourseCategoryViewModel>(courseCategory);//Mapper.CreateMp//Mapper.CreateMap<Course, CourseViewModel>();//Mapper.CreateMap<CourseCategory, CourseCategoryViewModel>();//Mapper.CreateMap<OpenRegister, OpenRegisterViewModel>();//Mapper.CreateMap<BookingCourse, BookingCourseViewModel>();//Mapper.CreateMap<BookingDetail, BookingDetailViewModel>();
+        //    Mapper.CreateMap<PostCategory, PostCategoryViewModel>();
+        //Mapper.Initialize(cfg =>
+        //    {
+        //        cfg.CreateMap<Course, CourseViewModel>();
+        //        //cfg.CreateMap<CourseCategory, CourseCategoryViewModel>();
+        //    });//var config = new MapperConfiguration(cfg => {//cfg.CreateMap<Course, CourseViewModel>();//    cfg.CreateMap<CourseCategory, CourseCategoryViewModel>();//});//IMapper mapper = config.CreateMapper();//var course = new Course();//var dest = mapper.Map<Course, CourseViewModel>(course);////var courseCategory = new CourseCategory();//var dest = mapper.Map<CourseCategory, CourseCategoryViewModel>(courseCategory);//Mapper.CreateMp//Mapper.CreateMap<Course, CourseViewModel>();//Mapper.CreateMap<CourseCategory, CourseCategoryViewModel>();//Mapper.CreateMap<OpenRegister, OpenRegisterViewModel>();//Mapper.CreateMap<BookingCourse, BookingCourseViewModel>();//Mapper.CreateMap<BookingDetail, BookingDetailViewModel>();
     }
 }

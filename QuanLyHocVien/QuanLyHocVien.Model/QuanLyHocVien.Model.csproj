@@ -117,6 +117,8 @@
     <Compile Include="Models\CourseCategory.cs" />
     <Compile Include="Models\Error.cs" />
     <Compile Include="Models\OpenRegister.cs" />
+    <Compile Include="Models\Post.cs" />
+    <Compile Include="Models\PostCategory.cs" />
     <Compile Include="Models\ProductTag.cs" />
     <Compile Include="Models\Tag.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

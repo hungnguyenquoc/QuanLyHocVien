@@ -19,7 +19,10 @@ namespace QuanLyHocVien.Service
 
         IEnumerable<CourseCategory> GetAll();
 
-        IEnumerable<CourseCategory> GetByID(int id);
+        IEnumerable<CourseCategory> GetAll(string keyword);
+
+        //IEnumerable<CourseCategory> GetByID(int id);
+        CourseCategory GetById(int Cate_ID);
 
         void Save();
     }
@@ -48,9 +51,22 @@ namespace QuanLyHocVien.Service
             return _courseCategoryRepository.GetAll();
         }
 
-        public CourseCategory GetByID(int id)
+        public IEnumerable<CourseCategory> GetAll(string keyword)
         {
-            return _courseCategoryRepository.GetSingleById(id);
+            if(!string.IsNullOrEmpty(keyword))
+            {
+                return _courseCategoryRepository.GetMulti(x => x.Cate_Name.Contains(keyword) || x.Cate_Description.Contains(keyword));
+            }
+            else
+            {
+
+            }
+            return _courseCategoryRepository.GetAll();
+        }
+
+        public CourseCategory GetById(int Cate_ID)
+        {
+            return _courseCategoryRepository.GetSingleById(Cate_ID);
         }
 
         public void Save()
@@ -63,9 +79,6 @@ namespace QuanLyHocVien.Service
             _courseCategoryRepository.Update(courseCategory);
         }
 
-        IEnumerable<CourseCategory> ICourseCategoryService.GetByID(int id)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
