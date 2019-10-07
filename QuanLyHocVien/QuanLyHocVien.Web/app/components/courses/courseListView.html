@@ -1,10 +1,88 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-    <h3>fsdaaaa</h3>
-</body>
-</html>
+﻿<!-- Breadcrumb-->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">Dashboard</li>
+    <li class="breadcrumb-item">
+        <a href="#">Quản lý khóa học</a>
+    </li>
+    <!-- Breadcrumb Menu-->
+    <li class="breadcrumb-menu d-md-down-none">
+        <div class="btn-group" role="group" aria-label="Button group">
+            <a class="btn" href="#">
+                <i class="icon-speech"></i>
+            </a>
+            <a class="btn" href="./">
+                <i class="icon-graph"></i>  Dashboard
+            </a>
+            <a class="btn" href="#">
+                <i class="icon-settings"></i>  Settings
+            </a>
+        </div>
+    </li>
+</ol>
+<!-- Table Content-->
+<div class="col-lg-12">
+
+    <div class="card">
+        <div class="card-header">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    <h3>Quản lý danh mục</h3>
+                </div>
+                <div class="col-6 text-right">
+                    <button type="button" class="btn btn-primary" ui-sref="course_add">
+                        <i class="fa fa-plus" aria-hidden="true"> </i>
+                        &nbsp; Thêm khóa học
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="controls">
+                        <div class="input-group">
+                            <input type="text" name="name" ng-model="keyword" class="form-control" value="">
+                            <span class="input-group-append">
+                                <button class="btn btn-secondary" type="button" ng-click="search()">Tìm kiếm</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-responsive-sm table-striped table-hover  mt-3">
+                <thead>
+                    <tr>
+                        <th>Tên khoa hoc</th>
+                        <th>Alias</th>
+                        <th>Mô tả</th>
+                        <th>Ngày tạo</th>
+                        <th>Trạng thái</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in courses">
+                        <td>{{ item.Cou_Name}}</td>
+                        <td>{{ item.Cou_Alias}}</td>
+                        <td> {{ item.Cou_Description }}</td>
+                        <td>{{ item.CreatedDate | date: 'dd/MM/yyyy  hh:mm:ss'}}</td>
+                        <td>
+                            <span ng-class="{'badge bg-red': item.Status == false, 'badge bg-green': item.Status == true}">
+                                {{ item.Status | statusFilter}}
+                            </span>
+                        </td>
+                        <td>
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"
+                               style="color: green; font-size: 1.2em" data-toggle="modal"
+                               data-target=".bd-edit-modal"></i>&nbsp;
+                            <i class="fa fa-times" aria-hidden="true"
+                               style="color: red; font-size: 1.2em"></i>
+                        </td>
+                    </tr>
+                </tbody>
+                <pager-directive class="pagination" page="{{page}}" custom-path="{{customPath}}" pages-count="{{pagesCount}}" total-count="{{totalCount}}" search-func="getCourseCategories(page)"></pager-directive>
+            </table>
+
+        </div>
+    </div>
+</div>

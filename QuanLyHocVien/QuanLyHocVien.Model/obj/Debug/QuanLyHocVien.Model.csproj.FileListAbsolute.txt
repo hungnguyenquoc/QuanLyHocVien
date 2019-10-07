@@ -49,3 +49,11 @@ F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLy
 F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Model\obj\Debug\QuanLyHocVien.Model.csproj.CopyComplete
 F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Model\obj\Debug\QuanLyHocVien.Model.dll
 F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Model\obj\Debug\QuanLyHocVien.Model.pdb
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Model\bin\Debug\EntityFramework.dll
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Model\bin\Debug\EntityFramework.SqlServer.dll
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Model\bin\Debug\EntityFramework.xml
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Model\bin\Debug\EntityFramework.SqlServer.xml
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

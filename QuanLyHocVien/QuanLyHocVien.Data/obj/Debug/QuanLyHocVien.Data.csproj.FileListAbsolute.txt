@@ -18,3 +18,8 @@ F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLy
 F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\obj\Debug\QuanLyHocVien.Data.csproj.CopyComplete
 F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\obj\Debug\QuanLyHocVien.Data.dll
 F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\obj\Debug\QuanLyHocVien.Data.pdb
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Project-LuanVanTotNghiep\DuAnQuanLyHocVien\QuanLyHocVien\QuanLyHocVien\QuanLyHocVien.Data\obj\Debug\QuanLyHocVien.Data.Migrations.IntergrateAspnetIdentity.resources

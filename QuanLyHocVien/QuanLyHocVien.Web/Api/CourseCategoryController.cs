@@ -71,37 +71,90 @@ namespace QuanLyHocVien.Web.Api
             return response;
             });
         }
+        //[Route("create")]
+        //[HttpPost]
+        //[AllowAnonymous]
+        //public HttpResponseMessage Create(HttpRequestMessage request, CourseCategoryViewModel courseCategoryVm)
+        //{
+        //    return CreateHttpResponse(request, () =>
+        //    {
+        //        HttpResponseMessage response = null;
+        //        if (!ModelState.IsValid)
+        //        {
+        //            response = request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
+        //        }
+        //        else
+        //        {
+        //            var newCourseCategory = new CourseCategory();
+        //            newCourseCategory.UpdateCourseCategory(courseCategoryVm);
 
+        //            _courseCategoryService.Add(newCourseCategory);
+        //            _courseCategoryService.Save();
 
+        //            var responseData = Mapper.Map<CourseCategory, CourseCategoryViewModel>(newCourseCategory);
+        //            response = request.CreateResponse(HttpStatusCode.Created, responseData);
+        //        }
+
+        //        return response;
+        //    });
+        //}
         [Route("create")]
         [HttpPost]
         [AllowAnonymous]
-        public HttpResponseMessage Create(HttpRequestMessage request, CourseCategoryViewModel courseCategoryViewModel)
+        public HttpResponseMessage Create(HttpRequestMessage request, CourseCategoryViewModel courseCategoryVM)
         {
             return CreateHttpResponse(request, () =>
             {
                 HttpResponseMessage response = null;
-                if(!ModelState.IsValid)
+                if (!ModelState.IsValid)
                 {
                     response = request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
                 }
                 else
                 {
                     var newCourseCategory = new CourseCategory();
-                    newCourseCategory.UpdateCourseCategory(courseCategoryViewModel);
+                    newCourseCategory.UpdateCourseCategory(courseCategoryVM);
 
                     _courseCategoryService.Add(newCourseCategory);
                     _courseCategoryService.Save();
 
                     var responseData = Mapper.Map<CourseCategory, CourseCategoryViewModel>(newCourseCategory);
                     response = request.CreateResponse(HttpStatusCode.Created, responseData);
-
                 }
+
                 return response;
             });
         }
 
-      
+        //[Route("create")]
+        //[HttpPost]
+        //[AllowAnonymous]
+        //public HttpResponseMessage Create(HttpRequestMessage request, CourseCategoryViewModel courseCategoryViewModel)
+        //{
+        //    return CreateHttpResponse(request, () =>
+        //    {
+        //        HttpResponseMessage response = null;
+        //        if(!ModelState.IsValid)
+        //        {
+        //            response = request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
+        //        }
+        //        else
+        //        {
+        //            var newCourseCategory = new CourseCategory();
+        //            newCourseCategory.UpdateCourseCategory(courseCategoryViewModel);
+
+        //            _courseCategoryService.Add(newCourseCategory);
+        //            _courseCategoryService.Save();
+
+        //            var responseData = Mapper.Map<CourseCategory, CourseCategoryViewModel>(newCourseCategory);
+        //            response = request.CreateResponse(HttpStatusCode.Created, responseData);
+
+        //        }
+        //        return response;
+        //    });
+        //}
+
+
 
 
         //[Route("getbyid/{id:int}")]

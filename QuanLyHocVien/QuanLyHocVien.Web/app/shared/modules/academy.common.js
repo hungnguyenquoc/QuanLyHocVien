@@ -1,3 +1,3 @@
 ﻿(function () {
-    angular.module('academy.common', ['ui.router'])
+    angular.module('academy.common', ['ui.router','ui.bootstrap'])
 })();

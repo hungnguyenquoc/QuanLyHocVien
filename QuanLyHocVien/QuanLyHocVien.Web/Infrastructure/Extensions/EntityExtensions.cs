@@ -26,5 +26,25 @@ namespace QuanLyHocVien.Web.Infrastructure.Extensions
             courseCategory.MetaKeyword = courseCategoryViewModel.MetaKeyword;
 
         }
+        public static void UpdateCourse(this Course course, CourseViewModel courseVm)
+        {
+            course.Cou_Alias = courseVm.Cou_Alias;
+            course.Cou_Content = courseVm.Cou_Content;
+            course.Cou_Description = courseVm.Cou_Description;
+            course.Cou_ID = courseVm.Cou_ID;
+            course.Cou_Image = courseVm.Cou_Image;
+            course.Cou_MoreImages = courseVm.Cou_MoreImages;
+            course.Cou_Name = courseVm.Cou_Name;
+            course.Cou_Price = courseVm.Cou_Price;
+            course.Cou_PromotionPrice = courseVm.Cou_PromotionPrice;
+            course.Cou_ViewCount = courseVm.Cou_ViewCount;
+            course.CreatedBy = courseVm.CreatedBy;
+            course.CreatedDate = courseVm.CreatedDate;
+            course.MetaDescription = course.MetaDescription;
+            course.Status = courseVm.Status;
+            course.UpdatedBy = courseVm.UpdatedBy;
+            course.UpdatedDate = courseVm.UpdatedDate;
+            course.MetaKeyword = courseVm.MetaKeyword;
+        }
     }
 }

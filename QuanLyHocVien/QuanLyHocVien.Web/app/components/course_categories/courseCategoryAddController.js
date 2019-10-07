@@ -10,11 +10,11 @@
             Cate_Name: "Node JS"
         }
     
-
+        
         $scope.AddCourseCategory = AddCourseCategory;
 
         function AddCourseCategory() {
-            apiService.post('/api/coursecategory/create', $scope.courseCategory,
+            apiService.post('api/coursecategory/create', $scope.courseCategory,
                 function (result) {
                     notificationService.displaySuccess(result.data.Cate_Name + 'được thêm mới');
                     $state.go('course_categories');
@@ -22,6 +22,5 @@
                     notificationService.displayError('Thêm không thành công');
                 });
         }
-
     } 
 })(angular.module('academy.course_categories'));

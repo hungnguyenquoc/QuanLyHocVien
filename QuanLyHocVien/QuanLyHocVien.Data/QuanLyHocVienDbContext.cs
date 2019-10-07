@@ -1,4 +1,5 @@
-﻿using QuanLyHocVien.Model.Models;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using QuanLyHocVien.Model.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyHocVien.Data
 {
-    public class QuanLyHocVienDbContext : DbContext
+    public class QuanLyHocVienDbContext : IdentityDbContext<ApplicationUser>
     {
         public QuanLyHocVienDbContext(): base("AcademyConnection")
         {
@@ -25,9 +26,17 @@ namespace QuanLyHocVien.Data
         public DbSet<Error> Errors { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<PostCategory> PostCategories { get; set; }
+
+        public static QuanLyHocVienDbContext Create()
+        {
+            return new QuanLyHocVienDbContext();
+        }
+
         protected override void OnModelCreating(DbModelBuilder builder)
         {
-            base.OnModelCreating(builder);
+            //base.OnModelCreating(builder);
+            builder.Entity<IdentityUserRole>().HasKey(i => new { i.UserId, i.RoleId });
+            builder.Entity<IdentityUserLogin>().HasKey(i => i.UserId);
         }
     }
 }

@@ -11,10 +11,11 @@ namespace QuanLyHocVien.Service
 {
     public interface ICourseService
     {
-       
-        void Add(Course course);
+        Course Add(Course course);
+        //void Add(Course course);
         void Update(Course course);
-        void Delete(int id);
+        Course Delete(int id);
+
         IEnumerable<Course> GetAll();
         IEnumerable<Course> GetAllPaging(int page, int pageSize, out int totalRow);
         IEnumerable<Course> GetAllByCategoryPaging(int Cate_ID, int page, int pageSize, out int totalRow);
@@ -37,10 +38,15 @@ namespace QuanLyHocVien.Service
             _courseRepository.Add(course);
         }
 
-        public void Delete(int id)
+        public Course Delete(int id)
         {
-            _courseRepository.Delete(id);
+            throw new NotImplementedException();
         }
+
+        //public void Delete(int id)
+        //{
+        //    _courseRepository.Delete(id);
+        //}
 
         public IEnumerable<Course> GetAll()
         {
@@ -76,5 +82,17 @@ namespace QuanLyHocVien.Service
         {
             _courseRepository.Update(course);
         }
+
+        Course ICourseService.Add(Course course)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
+        //Course ICourseService.Delete(int id)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
